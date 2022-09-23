@@ -57,9 +57,13 @@ body {
     color: var(--sub-text-color);
 }
 .footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
     background: var(--main-bg-color);
 }
 .footer .logo {
+    display: inline-block;
+    margin-bottom: 20px;
     color: var(--special-text-color);
 }
 .address-link {
@@ -67,6 +71,9 @@ body {
     color: rgba(255, 255, 255, 0.6);
     text-decoration: none;
     font-style: normal;
+}
+.address-item:not(:last-child) {
+    margin-bottom: 9px;
 }
 .map-link {
     color: var(--special-text-color);
@@ -224,4 +231,22 @@ body {
 }
 .advantage-item .subtitle {
     margin-bottom: 10px;
+}
+.about-pic {
+    padding-top: 0;
+}
+.about-pic .title,
+.team .title {
+    margin-bottom: 50px;
+}
+.about-pic .list,
+.team .list {
+    display: flex;
+}
+.pic-item:not(:last-child), 
+.team .list-wrap:not(:last-child) {
+    margin-right: 30px;
+}
+.team { 
+    background-color: #F5F4FA;
 }
