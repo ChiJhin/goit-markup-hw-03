@@ -12,6 +12,19 @@ body {
     --special-text-color: #ffffff;
     --light-blue-color: #188CE8;
 }
+.list {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+    list-style: none;
+}
+.container {
+    max-width: 1230px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
 .logo {
     color: #000000;
     font-family: 'Raleway', sans-serif;
@@ -24,6 +37,9 @@ body {
     color: var(--sub-bg-color);
 }
 .nav-link {
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
     font-weight: 500;
     line-height: 1.2;
     letter-spacing: 0.02em;
@@ -51,20 +67,24 @@ body {
 .map-link {
     color: var(--special-text-color);
 }
-.list {
-    list-style-type: none;
-}
+
 .hero {
     background: var(--main-bg-color);
+    
+}
+.hero > .container {
+    text-align: center;
 }
 .hero-title {
+    margin-top: 0;
+    margin-bottom: 0;
     text-transform: uppercase;
+    
+    color: var(--special-text-color);
     font-weight: 900;
     font-size: 44px;
     letter-spacing: 0.06em;
     line-height: 1.36;
-    color: var(--special-text-color);
-    text-align: center;
 }
 .btn {
     font-weight: 700;
@@ -92,14 +112,23 @@ body {
     width: 1px;
 }
 .subtitle {
-    font-weight: 700;
+    margin-top: 0;
+    margin-bottom: 0;
     text-transform: uppercase;
+    font-weight: 700;
 }
 .text {
+    margin-top: 0;
+    margin-bottom: 0;
     line-height: 1.71;
     color: var(--sub-text-color);
 }
+.pic {
+    display: block;
+}
 .title {
+    margin-top: 0;
+    margin-bottom: 0;
     font-weight: 700;
     font-size: 36px;
     line-height: 1.2;
@@ -152,4 +181,21 @@ body {
 }
 .current:hover {
     color: var(--light-blue-color);
+}
+.link-menu {
+    display: flex;
+}
+.link-menu > .list-item:not(:last-child) {
+    margin-right: 50px;
+}
+.link-menu > .list-item:first-child {
+    margin-left: 93px;
+}
+.header .container {
+    display: flex;
+    align-items: center;
+}
+.contact-menu {
+    display: flex;
+    margin-left: auto;
 }

@@ -4,41 +4,52 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Портфоліо</title>
+    <title>Головна</title>
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
     <header class="header">
-      <a href="" class="logo"><span class="logo-wrap">Web</span>Studio</a>
-      <nav class="nav">
-        <ul class="list">
-          <li><a href="./index.html" class="nav-link">Студія</a></li>
-          <li>
-            <a href="./portfolio.html" class="nav-link current">Портфоліо</a>
+      <div class="container">
+        <a href="" class="logo"><span class="logo-wrap">Web</span>Studio</a>
+        <nav class="nav">
+          <ul class="list link-menu">
+            <li class="list-item">
+              <a href="./index.html" class="nav-link current">Студія</a>
+            </li>
+            <li class="list-item">
+              <a href="./portfolio.html" class="nav-link">Портфоліо</a>
+            </li>
+            <li class="list-item"><a href="" class="nav-link">Контакти</a></li>
+          </ul>
+        </nav>
+        <ul class="list link-menu contact-menu">
+          <li class="list-item contact-item">
+            <a href="mailto:info@devstudio.com" class="nav-link nav-contact"
+              >info@devstudio.com</a
+            >
           </li>
-          <li><a href="" class="nav-link">Контакти</a></li>
+          <li class="list-item contact-item">
+            <a href="tel:+380961111111" class="nav-link nav-contact"
+              >+38 096 111 11 11</a
+            >
+          </li>
         </ul>
-      </nav>
-      <ul class="list">
-        <li>
-          <a href="mailto:info@devstudio.com" class="nav-link nav-contact"
-            >info@devstudio.com</a
-          >
-        </li>
-        <li>
-          <a href="tel:+380961111111" class="nav-link nav-contact"
-            >+38 096 111 11 11</a
-          >
-        </li>
-      </ul>
+      </div>
     </header>
 
     <main>
-      <section>
+      <section class="container">
         <h1 class="visually-hidden">Портфоліо</h1>
         <ul class="list">
           <li>
@@ -61,6 +72,7 @@
         <ul class="list">
           <li>
             <img
+              class="pic"
               src="./images/img4.jpg"
               alt="Ноутбук із зображенням веб-сайту"
               width="370"
@@ -71,6 +83,7 @@
           </li>
           <li>
             <img
+              class="pic"
               src="./images/img5.jpg"
               alt="Баскетболісти"
               width="370"
@@ -83,6 +96,7 @@
           </li>
           <li>
             <img
+              class="pic"
               src="./images/img6.jpg"
               alt="Логотип"
               width="370"
@@ -95,6 +109,7 @@
           </li>
           <li>
             <img
+              class="pic"
               src="./images/img7.jpg"
               alt="Навушники"
               width="370"
@@ -107,6 +122,7 @@
           </li>
           <li>
             <img
+              class="pic"
               src="./images/img8.jpg"
               alt="Дві коробочки"
               width="370"
@@ -119,6 +135,7 @@
           </li>
           <li>
             <img
+              class="pic"
               src="./images/img9.jpg"
               alt="Монітор із сайтом"
               width="370"
@@ -131,6 +148,7 @@
           </li>
           <li>
             <img
+              class="pic"
               src="./images/img10.jpg"
               alt="Журнал"
               width="370"
@@ -143,6 +161,7 @@
           </li>
           <li>
             <img
+              class="pic"
               src="./images/img11.jpg"
               alt="Етикетка з лейблом"
               width="370"
@@ -155,6 +174,7 @@
           </li>
           <li>
             <img
+              class="pic"
               src="./images/img12.jpg"
               alt="Чоловік за ноутбуком"
               width="370"
@@ -168,30 +188,32 @@
     </main>
 
     <footer class="footer">
-      <a href="" class="logo"><span class="logo-wrap">Web</span>Studio</a>
-      <address class="address">
-        <ul class="list">
-          <li>
-            <a
-              class="address-link map-link"
-              href="https://goo.gl/maps/sGmAFH82e1hSpcsq9"
-              target="_blank"
-              rel="noopener noreferrer"
-              >м. Київ, пр-т Лесі Українки, 26</a
-            >
-          </li>
-          <li>
-            <a href="mailto:info@devstudio.com" class="address-link"
-              >info@devstudio.com</a
-            >
-          </li>
-          <li>
-            <a href="tel:+380961111111" class="address-link"
-              >+38 096 111 11 11</a
-            >
-          </li>
-        </ul>
-      </address>
+      <div class="container">
+        <a href="" class="logo"><span class="logo-wrap">Web</span>Studio</a>
+        <address class="address">
+          <ul class="list">
+            <li>
+              <a
+                class="address-link map-link"
+                href="https://goo.gl/maps/sGmAFH82e1hSpcsq9"
+                target="_blank"
+                rel="noopener noreferrer"
+                >м. Київ, пр-т Лесі Українки, 26</a
+              >
+            </li>
+            <li>
+              <a href="mailto:info@devstudio.com" class="address-link"
+                >info@devstudio.com</a
+              >
+            </li>
+            <li>
+              <a href="tel:+380961111111" class="address-link"
+                >+38 096 111 11 11</a
+              >
+            </li>
+          </ul>
+        </address>
+      </div>
     </footer>
   </body>
 </html>
