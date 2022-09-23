@@ -12,6 +12,10 @@ body {
     --special-text-color: #ffffff;
     --light-blue-color: #188CE8;
 }
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
 .list {
     margin-top: 0;
     margin-bottom: 0;
@@ -19,7 +23,7 @@ body {
     list-style: none;
 }
 .container {
-    max-width: 1230px;
+    max-width: 1200px;
     padding-left: 15px;
     padding-right: 15px;
     margin-left: auto;
@@ -86,6 +90,10 @@ body {
     line-height: 1.36;
 }
 .btn {
+    padding-top: 10px;
+    padding-right: 32px;
+    padding-bottom: 10px;
+    padding-left: 32px;
     font-weight: 700;
     font-size: 16px;
     line-height: 1.88;
@@ -190,6 +198,9 @@ body {
 .link-menu > .list-item:first-child {
     margin-left: 93px;
 }
+.header {
+    border-bottom: 1px solid #ECECEC;
+}
 .header .container {
     display: flex;
     align-items: center;
@@ -199,6 +210,18 @@ body {
     margin-left: auto;
 }
 .hero .container {
-    padding-top: 200px;
-    padding-bottom: 200px;
+    padding-top: 106px;
+    padding-bottom: 106px;
+}
+.advantage {
+    display: flex;
+}
+.advantage-item {
+    width: 270px;
+}
+.advantage-item:not(:last-child) {
+    margin-left: 30px;
+}
+.advantage-item .subtitle {
+    margin-bottom: 10px;
 }
